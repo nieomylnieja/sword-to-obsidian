@@ -104,7 +104,7 @@ def write_chapter_file(locale: Locale, book: Book, chapter_index: int) -> None:
             refs = f"[[{book.name} {chapter-1}|← {book.name} {chapter-1}]] | {refs}"
         if chapter < len(book.chapters):
             refs = f"{refs} | [[{book.name} {chapter+1}|{book.name} {chapter+1} →]]"
-        verses = "\n\n".join(
+        verses = "\n".join(
             [
                 f"###### {i+1}\n{verse}"
                 for i, verse in enumerate(book.chapters[chapter_index])
