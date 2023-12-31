@@ -14,6 +14,7 @@ If you have Poetry installed, simply run (example):
 
 ```shell
 poetry shell
+poetry install --no-root
 ./main.py ~/Downloads/PolUGdanska.zip
 ```
 
